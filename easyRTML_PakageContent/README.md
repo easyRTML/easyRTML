@@ -245,9 +245,98 @@ else:
 
 To deply the Xgboost or Random Forest trained saved model, we require to generate:
 
-- Classifer.h
-- Pipeline.h
-- [Modify the Data Recording code of Arduino IDE](#Step 1: Initialise Data Recording for Microcontroller)
+- pipeline.h
+- classifier.h
+- Modify the Data Recording code of Arduino IDE 
 
+### Generate Pipeline.h 
+
+Same for both model, Xgboost and Random Forest both:
+
+```sh
+
+from easyRTML import authenticate
+email = "abc@gmail.com"  #Enter your email here
+
+#Authetication Key: 136126847XXXXXXXXXXXXX
+
+if authenticate(email=email):
+    from easyRTML import Pipe
+
+    """
+    - Change rfml/xgml depending upon which model been used.
+    - Genearted code will be saved in your directory.
+    """
+
+    pipe = Pipe(processor, extractor, xgml) 
+    pipe.save_cpp_code()
+
+else:
+    print("Access denied")
+
+    """
+    - A promt will apprear, please enter your Authetication code to proceed.
+    """
+```
+
+
+### Generate Classifier.h 
+
+For Xgboost porting:
+
+```sh
+
+from easyRTML import authenticate
+email = "abc@gmail.com"  #Enter your email here
+
+#Authetication Key: 136126847XXXXXXXXXXXXX
+
+if authenticate(email=email):
+    from easyRTML import generate_code
+
+    """
+    - Make sure to import XgBoost model properly as .pkl file.
+    - Genearted code will be saved in your directory.
+    """
+
+    cpp_code = generate_code("easyRTML_Xgboost", 'xgboost_model.pkl', xgml)
+    print(cpp_code)
+
+else:
+    print("Access denied
+    
+    """
+    - A promt will apprear, please enter your Authetication code to proceed.
+    """
+```
+
+
+For Random Forest porting:
+
+```sh
+
+from easyRTML import authenticate
+email = "abc@gmail.com"  #Enter your email here
+
+#Authetication Key: 136126847XXXXXXXXXXXXX
+
+if authenticate(email=email):
+    from easyRTML import generate_code
+
+    """
+    - Make sure to import Random Forest model properly as .pkl file.
+    - Genearted code will be saved in your directory.
+    """
+
+     cpp_code = generate_code("rf_model", 'rf_model.pkl', rfml)
+     print(cpp_code)
+
+else:
+    print("Access denied
+    
+    """
+    - A promt will apprear, please enter your Authetication code to proceed.
+    """
+```
 
 
