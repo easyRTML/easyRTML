@@ -417,6 +417,8 @@ void loop() {
   
 }
 ```
+This is how the Arduino IDE should look like, main.ino code, pipeline.h code and classifier.h code, all 3 in different tabs in same file.
+<img width="1433" alt="Screenshot 2024-07-08 at 11 24 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/252cd43d-cd08-4462-b000-a16c1e94a37d">
 
 
 
