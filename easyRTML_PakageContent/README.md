@@ -2,20 +2,21 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/easyRTML/blob/main/LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-brightgreen.svg)](https://www.python.org/downloads/)
 
-**easyRTML** is a Python package designed 
 
 <img width="1282" alt="Screenshot 2024-07-08 at 11 09 00 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/716f350f-f6fd-405e-b849-51762d5a5fbc">
 
 Now train your first Machine Learning signal classification model and deploy it in any microcontroller (ESP32, ESP8266, Arduino 33 BLE, RaspberryPi and Python) and perfrom classification in Real-Time.
 
-# Prerequisite
+# Getting Started
+
 - Any compatible microcontroller board
 - Sensor (IMU, EMG, EOG, Flex_sensor, Force Resistve Sensor , etc)
-- No Coding Knowledge Required
-- Beigineer Friendly
-- Easy to Use
-- All in one (Data Acquisition, Data Cleaning, Data preprocessing, Feature Extraction, Feature Selection, Model selection, Scientific Visual Outputs, Best model fit, Deployment code generator)
+- No Prior Coding Knowledge Required: Our solution is designed to be accessible even to those with no coding experience.
+- Beginner-Friendly: User-friendly interface and straightforward processes ensure a smooth start for beginners.
+- Easy to Use: Simple code to understand, less paramaters to tweak, press only enter that's it. That easy!.
+- Comprehensive Solution: Includes all essential components—Data Acquisition, Data Cleaning, Data Preprocessing, Feature Extraction, Feature Selection, Model Training, Scientific Visualization, Optimal Model Fit, and Deployment Code Generation.
 
+  
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
