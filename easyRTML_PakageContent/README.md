@@ -26,21 +26,25 @@ Let's get started!
 
   
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Step 1: Initialize Data Recording for Microcontroller](#step-1-initialize-data-recording-for-microcontroller)
+  - [Step 1: Initialize Data Recording for Your Microcontroller](#step-1-initialize-data-recording-for-your-microcontroller)
+  - [Perform Data Acquisition](#perform-data-acquisition)
   - [Step 2: PreProcessing](#step-2-preprocessing)
   - [Step 3: Feature Extraction](#step-3-feature-extraction)
-  - [Step 4: Feature Selection and Model Training](#step-4-feature-selection-and-model-training)
-    - [XGBoost Model Training](#xgboost-model-training)
+  - [Step 4: Feature Selection + Model Training](#step-4-feature-selection--model-training)
+    - [Xgboost Model Training](#xgboost-model-training)
     - [Random Forest Model Training](#random-forest-model-training)
-  - [Step 5: Model Deployment for Real-Time Machine Learning (RTML)](#step-5-model-deployment-for-real-time-machine-learning-rtml)
-    - [RTML Code Generator for Python (Jupyter Notebook & VSCode)](#rtml-code-generator-for-python-jupyter-notebook-vscode)
+  - [Step 5: Model Deployment to Perform Real-Time Machine Learning (RTML)](#step-5-model-deployment-to-perform-real-time-machine-learning-rtml)
+    - [RTML Code Generator for Python (Jupyter Notebook & VSCode)](#rtml-code-generator-for-python-jupyter-notebook--vscode)
     - [RTML for Microcontroller (ESP32, ESP8266, Arduino 33 BLE, etc)](#rtml-for-microcontroller-esp32-esp8266-arduino-33-ble-etc)
       - [Generate Pipeline.h](#generate-pipelineh)
       - [Generate Classifier.h](#generate-classifierh)
       - [Modify the Data Recording Code of Arduino IDE (main.ino)](#modify-the-data-recording-code-of-arduino-ide-mainino)
 
+
+  
 ## Installation
 
 Install latest easyRTML package in your jupyter notebook environment
