@@ -86,6 +86,8 @@ Select COMX port and upload the code. Once the is been uploaded in Arduino IDE g
 
 Tip: If The data is not plotting, check the baudrate match it to code if still problem exsit, plug out the serial port and pulg in back.
 
+> <span style="background-color: #FFFF00">**Tip:** If the data is not plotting, check the baud rate and ensure it matches the code. If the problem persists, unplug the serial port and plug it back in.</span>
+
 ## Perfrom Data Acquitition
 Now you have sucessfully uploaded the data aqutition code, your device is ready to Data Recording. Go back to jyputer notebook where the package is installed. Run the below code. 
 
