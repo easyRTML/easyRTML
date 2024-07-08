@@ -83,12 +83,6 @@ Now you have sucessfully uploaded the data aqutition code, your device is ready 
 
 from easyRTML import DataAQ
 
-filename = "fsr" # Enter the name you want for your recorded CSV file Eg. "fsr"
-serial_port = '/dev/tty.usbserial-XXXX'  # Enter the serial port name Eg. COMX, /dev/tty.usbserial-XXXX
-baud_rate = 115200  # Enter the same BaudRate used in Data Recording code at Arduino IDE.
-
-data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=baud_rate)
-
 """
 -Protocol to record data:
   * Data should be recorded in Continious Motion
@@ -102,6 +96,12 @@ data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=
 Tip : If code stops while recording or doesn't, pulg out the serial port and plug in back.
 
 """
+
+filename = "fsr" # Enter the name you want for your recorded CSV file Eg. "fsr"
+serial_port = '/dev/tty.usbserial-XXXX'  # Enter the serial port name Eg. COMX, /dev/tty.usbserial-XXXX
+baud_rate = 115200  # Enter the same BaudRate used in Data Recording code at Arduino IDE.
+
+data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=baud_rate)
 
 ```
 
