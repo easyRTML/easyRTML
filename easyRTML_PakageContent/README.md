@@ -1,3 +1,8 @@
+## A Complete Guide to use easyRTML
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/easyRTML/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-brightgreen.svg)](https://www.python.org/downloads/)
+
+**easyRTML** is a Python package designed 
 
 <img width="1282" alt="Screenshot 2024-07-08 at 11 09 00 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/716f350f-f6fd-405e-b849-51762d5a5fbc">
 
