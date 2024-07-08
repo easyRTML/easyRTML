@@ -5,7 +5,18 @@
 
 <img width="1282" alt="Screenshot 2024-07-08 at 11 09 00 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/716f350f-f6fd-405e-b849-51762d5a5fbc">
 
-Now train your first Machine Learning signal classification model and deploy it in any microcontroller (ESP32, ESP8266, Arduino 33 BLE, RaspberryPi and Python) and perfrom classification in Real-Time.
+**Dear ML Enthusiasts and Aspiring Beginners,**
+
+Welcome to the exciting world of Machine Learning! 🌟 You’re about to embark on a journey to train your first Machine Learning signal classification model. Whether you’re using microcontrollers like ESP32, ESP8266, Arduino 33 BLE, or platforms like Raspberry Pi and Python, you’ll be able to perform Real-Time classification with lightning-fast prediction times ranging from 10 to 100 microseconds.
+
+Get ready to dive in and see your data come to life! 🚀
+
+
+
+
+My dear lovely beigineer ML enthusiasts, for you to begin and learn to train your first Machine Learning signal classification model and deploy it in any microcontroller (ESP32, ESP8266, Arduino 33 BLE, RaspberryPi and Python) and perfrom Real-Time classification with prediction time in a range of 10-100 microseconds.
+
+
 
 ## Getting Started
 
