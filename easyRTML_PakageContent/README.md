@@ -26,7 +26,7 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Usage
 
-### Perfrom Data Aquitition
+### Step 1: Initialise Data Recording for Microcontroller
 To record the data from your microcontoller (for Instance Esp8266), recording code must be uploaded in it through Arduino IDE, initilizing the required sensor (for Instance MPU6050, IMU Sensor) with comma separted values.
 
 Example Data Recording code of Arduino IDE for MPU6050 and ESP8266:
@@ -76,6 +76,7 @@ Select COMX port and upload the code. Once the is been uploaded in Arduino IDE g
 
 Tip: If The data is not plotting, check the baudrate match it to code if still problem exsit, plug out the serial port and pulg in back.
 
+## Perfrom Data Acquitition
 Now you have sucessfully uploaded the data aqutition code, your device is ready to Data Recording. Go back to jyputer notebook where the package is installed. Run the below code. 
 
 ```sh
@@ -89,6 +90,11 @@ baud_rate = 115200  # Enter the same BaudRate used in Data Recording code at Ard
 data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=baud_rate)
 
 """
+-Protocol to record data:
+  * Data should be recorded in Continious Motion
+  * Mean geature duration should be aproximately 1 sec.
+  * For good results, record for minimum 30 sec with 30 repetation of motion for that label.
+
 - The code will pormt to enter the Duration of data to be recorded.
 - You can record multiple labels, to perfrom multiclass classificcation as required.
 - You can record the data again for any label if not recorded perfectly.
@@ -98,4 +104,39 @@ Tip : If code stops while recording or doesn't, pulg out the serial port and plu
 """
 
 ```
+
+Cool, once the CSV file is been exported it's ready for PreProcessing!
+
+## Step 2: PreProcessing
+
+```sh
+
+from easyRTML import Processor, Plot
+file_name = 'fsr.csv' # Replace with your recorded, saved CSV file in directory.
+processor = Processor(file_name)
+
+Plot.plot(processor.df) #Plots the CSV file features
+Plot.plot_normalized(processor.normalized_df) #Plots the normalized features
+Plot.plot_separated(processor.normalized_df)  #Separetly plots every normlaized label
+
+```
+
+## Step 3: Feature Extraction 
+
+```sh
+from easyRTML import Extractor
+
+#Update the sampling_freq with your recorded CSV file. Update mean_geature_duration and shift if needed. (Experiemnt with it)
+extractor = Extractor(sampling_freq=1000, mean_gesture_duration=1000, shift=0.3)
+
+features_df, shuffled_df, variables = extractor.process_data(processor.normalized_df)
+features_df.describe()
+
+```
+
+## Step 4: Feature Selection + Model Training 
+
+
+
+
 
