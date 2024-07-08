@@ -12,7 +12,9 @@ Welcome to the world of Machine Learning! It’s perfectly okay to be a beginner
 I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified. Let's get started!
 
 **Developer - Aryan Jadhav**
-  
+
+Demo: Prosthetic Hand 10 gesture recognition using 3 channel EMG sensors and easyRTML Package.
+![My Video 1 (1)](https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627)
 
 ## Getting Started
 
