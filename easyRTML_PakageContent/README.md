@@ -84,8 +84,6 @@ Serial.println("");
 
 Select COMX port and upload the code. Once the is been uploaded in Arduino IDE go to Tools->Serial Ploter and check is the data is been plotting suceessfully. 
 
-Tip: If The data is not plotting, check the baudrate match it to code if still problem exsit, plug out the serial port and pulg in back.
-
 > <span style="background-color: #FFFF00">**Tip:** If the data is not plotting, check the baud rate and ensure it matches the code. If the problem persists, unplug the serial port and plug it back in.</span>
 
 ## Perfrom Data Acquitition
@@ -207,7 +205,7 @@ To use any of this code, you should get an Authetication Key from https://easyrt
 <img width="1440" alt="Screenshot 2024-07-08 at 11 27 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/18616df1-3c39-4738-ac85-439331e1401e">
 
 
-Note: Make sure you enter proper Email and Name, Since you will be reciving Authetication Key on your provided Email.
+> <span style="background-color: #FFFF00">**Note:** Make sure you enter proper Email and Name, Since you will be reciving Authetication Key on your provided Email.</span>
 
 Next, save your Authetication Key and Email you recived, it would be required to execute the code. 
 
