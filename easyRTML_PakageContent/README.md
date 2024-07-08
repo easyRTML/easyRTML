@@ -191,6 +191,12 @@ You can:
 - Perfrom RTML in RaspberryPi through Miropython generted code (....Comming soon)
 
 To use any of this code, you should get an Authetication Key from https://easyrtml.pythonanywhere.com/
+![Get Authetication Key](images/key.png)
+
+Tip: Make sure you enter proper Email and Name, Since you will be reciving Auth Key on that Email.
+
+
+
 
 
 
