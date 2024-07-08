@@ -24,10 +24,52 @@ Now train your first Machine Learning signal classification model and deploy it 
     pip install easyRTML
     ```
 
-
 ## Usage
 
-### Running the Project
-
+### Perfrom Data Aquitition
+To record the data from your microcontoller (for Instance Esp8266), recording code must be uploaded in it through Arduino IDE, initilizing the required sensor (for Instance MPU6050, IMU Sensor) with comma separted values.
 ```sh
-python main.py
+Example Data Recording code for MPU6050 and ESP8266
+#include <Adafruit_MPU6050.h>
+#include <Wire.h>
+
+Adafruit_MPU6050 mpu;
+
+void setup() {
+Serial.begin(115200);
+while (!Serial) {
+delay(10); 
+}
+
+if (!mpu.begin()) {
+
+while (1) {
+delay(10);
+}
+}
+
+
+mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+}
+
+void loop() {
+sensors_event_t a, g, temp;
+mpu.getEvent(&a, &g, &temp);
+
+Serial.print(a.acceleration.x);
+Serial.print(",");
+Serial.print(a.acceleration.y);
+Serial.print(",");
+Serial.print(a.acceleration.z);
+Serial.print(",");
+Serial.print(g.gyro.x);
+Serial.print(",");
+Serial.print(g.gyro.y);
+Serial.print(",");
+Serial.print(g.gyro.z);
+Serial.println("");
+
+}
+
+```
