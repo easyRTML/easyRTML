@@ -1,4 +1,4 @@
-##easyRTML
+# easyRTML
 
 <img width="1282" alt="Screenshot 2024-07-08 at 11 09 00 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/716f350f-f6fd-405e-b849-51762d5a5fbc">
 
