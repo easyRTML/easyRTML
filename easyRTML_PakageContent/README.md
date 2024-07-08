@@ -186,17 +186,59 @@ rfml.Random_forest(
 You are all set at this point to deploy your model in various platforms and get live predictions from new data by sensor.
 
 You can:
-- Perfrom RTML in jupyter notebook though Python 
+- Perfrom RTML in jupyter notebook or VSCode though Python 
 - Perfrom RTML in ESP32, ESP8266, Arduino 33 BLE Microcontroller through Classifier.h and Pipeline.h generted code
 - Perfrom RTML in RaspberryPi through Miropython generted code (....Comming soon)
 
 To use any of this code, you should get an Authetication Key from https://easyrtml.pythonanywhere.com/
-![Get Authetication Key](images/key.png)
-
-Tip: Make sure you enter proper Email and Name, Since you will be reciving Auth Key on that Email.
 
 
+Note: Make sure you enter proper Email and Name, Since you will be reciving Authetication Key on your provided Email.
 
+Next, save your Authetication Key and Email you recived, it would be required to execute the code. 
+
+
+### RTML through Python code (for Jupyter Notebook or VSCode)
+
+```sh
+
+from easyRTML import authenticate
+email = "abc@gmail.com" #Enter your email here
+
+#Authetication Key: 136126847XXXXXXXXXXXXX 
+
+if authenticate(email=email):
+    
+    from easyRTML import pyRTML
+
+    py_RTML = pyRTML(processor, extractor, xgml) #Change rbml/xgml depending upon which model been used
+    
+    """
+    - Run the below code to access the generted python script to Execute the Real-time classification.
+    - Make sure you define model_file, serial_port, baud_rate correctly.
+    - Genearted code will be saved in your directory.
+    """
+
+    generated_code = py_RTML.easyRTML_python_generate(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200)
+    py_RTML.save_code_to_file(generated_code) # Save the generated code to a file
+    print(generated_code)
+
+    """
+    - Run the below code to Execute the Real-time classification directly without getting generted code.
+    - Make sure you define model_file, serial_port, baud_rate correctly.
+    - Genearted code will be saved in your directory.
+    """
+
+    # py_RTML.execute_generated_code(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200) 
+    
+else:
+    print("Access denied")
+
+    """
+    - A promt will apprear, please enter your Authetication code to proceed.
+    """
+
+```
 
 
 
