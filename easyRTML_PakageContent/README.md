@@ -49,7 +49,7 @@ Let's get started!
 Install latest easyRTML package in your jupyter notebook environment
 
 ```sh
-pip install easyRTML
+pip install easyRTML==1.6.4
 
 ```   
 
@@ -460,7 +460,7 @@ This is how your Arduino IDE setup should look, with the main.ino, pipeline.h, a
 
 Fantastic! Now, compile the code and upload it to your microcontroller board. Once the upload is complete, open the 'Serial Monitor' in the Arduino IDE. **Voilà! Your real-time prediction results will be displayed.**
 
-**YAAAAAAAAYYYY! You’ve successfully completed your first Real-Time Machine Learning project. 🎉🎉🎉**
+**YAAAAAAAAYYYY! You’ve successfully deployed your first Real-Time Machine Learning project. 🎉🎉🎉**
 
 ---
 
