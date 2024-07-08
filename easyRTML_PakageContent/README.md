@@ -161,6 +161,7 @@ xgml.Xgboost(
     cv_params={'n_splits': 5},
     filename='xgboost_model.pkl'
 )
+#Change xgb_params and cv_params as required.
 
 ```
 
@@ -176,9 +177,20 @@ rfml.Random_forest(
     cv_params={'n_splits': 5},
     filename='rf_model.pkl'
 )
+#Change rf_params and cv_params as required.
 
 ```
 
+## Step 5: Model deployment to perfrom Real-Time Machine Learning (RTML)
+
+You are all set at this point to deploy your model in various platforms and get live predictions from new data by sensor.
+
+You can:
+- Perfrom RTML in jupyter notebook though Python 
+- Perfrom RTML in ESP32, ESP8266, Arduino 33 BLE Microcontroller through Classifier.h and Pipeline.h generted code
+- Perfrom RTML in RaspberryPi through Miropython generted code (....Comming soon)
+
+To use any of this code, you should get an Authetication Key from https://easyrtml.pythonanywhere.com/
 
 
 
