@@ -7,13 +7,11 @@
 
 **Dear ML Enthusiasts and Aspiring Beginners,**
 
-Welcome to the world of Machine Learning! 🌟 It’s perfectly okay to be a beginner in ML—I'm still learning myself! Today, you're about to embark on an exciting journey to train your first Machine Learning signal classification model. Whether you’re using microcontrollers like ESP32, ESP8266, Arduino 33 BLE, or platforms like Raspberry Pi and Python, you’ll be able to perform Real-Time classification with lightning-fast prediction times ranging from 10 to 100 microseconds.
+Welcome to the world of Machine Learning! It’s perfectly okay to be a beginner in ML—I'm still learning myself! Today, you're about to start on a journey to train your first Machine Learning signal classification model. Deploy it on any microcontrollers like ESP32, ESP8266, Arduino 33 BLE, or platforms like Raspberry Pi and Python, you’ll be able to perform Real-Time classification with lightning-fast prediction times ranging from **10 to 100 microseconds.**
 
-I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified.
+I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified. Let's get started!
 
-Get ready to dive in and see your data come to life! 🚀
-
-- **Developer - Aryan Jadhav**
+-**Developer - Aryan Jadhav**
   
 
 ## Getting Started
