@@ -24,9 +24,9 @@ Now train your first Machine Learning signal classification model and deploy it 
   - [Step 5: Model Deployment for Real-Time Machine Learning (RTML)](#step-5-model-deployment-for-real-time-machine-learning-rtml)
     - [RTML Code Generator for Python (Jupyter Notebook & VSCode)](#rtml-code-generator-for-python-jupyter-notebook-vscode)
     - [RTML for Microcontroller (ESP32, ESP8266, Arduino 33 BLE, etc)](#rtml-for-microcontroller-esp32-esp8266-arduino-33-ble-etc)
-      - [Generate `Pipeline.h`](#generate-pipelineh)
-      - [Generate `Classifier.h`](#generate-classifierh)
-      - [Modify the Data Recording Code of Arduino IDE (`main.ino`)](#modify-the-data-recording-code-of-arduino-ide-mainino
+      - [Generate Pipeline.h](#generate-pipelineh)
+      - [Generate Classifier.h](#generate-classifierh)
+      - [Modify the Data Recording Code of Arduino IDE (main.ino)](#modify-the-data-recording-code-of-arduino-ide-mainino)
 
 ## Installation
 
