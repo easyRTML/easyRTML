@@ -1,6 +1,6 @@
 # easyRTML
 
-![Project Logo](images/logo.png)
+src="https://github.com/easyRTML/easyRTML/assets/174990499/7fe29bb8-376c-46df-adb4-8c25c759e9ac">
 
 Now train your first Machine Learning signal classification model and deploy it in any microcontroller (ESP32, ESP8266, Arduino 33 BLE, RaspberryPi and Python) and perfrom classification in Real-Time.
 
