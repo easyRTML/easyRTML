@@ -42,10 +42,11 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Usage
 
-## Step 1: Initialise Data Recording for Microcontroller
-To record the data from your microcontoller (for Instance Esp8266), recording code must be uploaded in it through Arduino IDE, initilizing the required sensor (for Instance MPU6050, IMU Sensor) with comma separted values.
+## Step 1: Initialize Data Recording for Your Microcontroller
+To get started with recording data from your microcontroller (for example, the ESP8266), you'll need to upload the recording code using the Arduino IDE. This code will set up your sensor (like the MPU6050 IMU sensor) to send data in a comma-separated format.
 
-Example Data Recording code of Arduino IDE for MPU6050 and ESP8266:
+Here’s a sample data recording code for the MPU6050 and ESP8266:
+
 ```sh
 
 #include <Adafruit_MPU6050.h>
@@ -88,12 +89,12 @@ Serial.println("");
 
 ```
 
-Select COMX port and upload the code. Once the is been uploaded in Arduino IDE go to Tools->Serial Ploter and check is the data is been plotting suceessfully. 
+Select the COMX port and upload the code to your microcontroller. Once the upload is complete, head over to 'Tools' -> 'Serial Plotter' in the Arduino IDE to verify that the data is plotting successfully.
 
-> <span style="background-color: #FFFF00">**Tip:** If the data is not plotting, check the baud rate and ensure it matches the code. If the problem persists, unplug the serial port and plug it back in.</span>
+> <span style="background-color: #FFFF00">**Tip:** If the data isn't plotting, double-check the baud rate to ensure it matches the code. If the issue persists, try unplugging and reconnecting the serial port.</span>
 
-## Perfrom Data Acquitition
-Now you have sucessfully uploaded the data aqutition code, your device is ready to Data Recording. Go back to jyputer notebook where the package is installed. Run the below code. 
+## Perform Data Acquisition
+With the data acquisition code successfully uploaded, your device is now ready for Data Acquisition. Next, return to your Jupyter Notebook where the easyRTML package is installed. Execute the following code to start recording data: 
 
 ```sh
 
@@ -121,9 +122,11 @@ data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=
 
 ```
 
-Cool, once the CSV file is been exported it's ready for PreProcessing!
+**Voila!** Once the CSV file is exported, you're all set and ready to dive into PreProcessing! 🎉
 
 ## Step 2: PreProcessing
+
+In this step, we’ll handle data cleaning, address any missing values, normalize the data, and visualize it through plots.
 
 ```sh
 
@@ -138,6 +141,16 @@ Plot.plot_separated(processor.normalized_df)  #Separetly plots every normlaized 
 ```
 
 ## Step 3: Feature Extraction 
+
+Now we dive into one of the crucial stages: Feature Extraction. We'll employ a rolling window approach with a shift logic to extract time-domain features.
+
+Features Extracted:
+- Minimum
+- Maximum
+- Mean
+- Root Mean Square
+
+This features are enough to capture the essential characteristics of the data while keeping the model straightforward and manageable.
 
 ```sh
 from easyRTML import Extractor
