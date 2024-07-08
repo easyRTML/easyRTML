@@ -116,7 +116,7 @@ With the data acquisition code successfully uploaded, your device is now ready f
 from easyRTML import DataAQ
 
 """
--Protocol to record data:
+- Protocol to record data:
   * Data should be recorded in Continious Motion
   * Mean geature duration should be aproximately 1 sec.
   * For good results, record for minimum 30 sec with 30 repetation of motion for that label.
