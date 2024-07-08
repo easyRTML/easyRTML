@@ -1,4 +1,4 @@
-## A Complete Guide to use easyRTML
+# A Complete Guide to use easyRTML
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/easyRTML/blob/main/LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-brightgreen.svg)](https://www.python.org/downloads/)
 
@@ -7,7 +7,7 @@
 
 Now train your first Machine Learning signal classification model and deploy it in any microcontroller (ESP32, ESP8266, Arduino 33 BLE, RaspberryPi and Python) and perfrom classification in Real-Time.
 
-# Getting Started
+## Getting Started
 
 - Any compatible microcontroller board
 - Sensor (IMU, EMG, EOG, Flex_sensor, Force Resistve Sensor , etc)
