@@ -136,9 +136,18 @@ features_df.describe()
 
 ## Step 4: Feature Selection + Model Training 
 
-Now we are all set to Train out Machine Learning model. Before that we select the best features among the features_df dataframe which corresponds to highest accursy with limited number of features with coorelation matrix of selected features, Pair Plot of select features and classification report. 
+Now we are all set to Train out Machine Learning model. Before that we select the best features among the features_df dataframe which corresponds to highest accursy with limited number of features eventually resulting in prediction time 10-100 macroseconds.
 
-Currently we support 2 Machine learning models Xgboost and RandomForest for offline and online classification.
+Outputs and Visual results:
+- List of Selected Features
+- Folds Accuracy, Mean Folds Accuracy, Training Accuracy, Testing Accuracy
+- Classification Report of Tranined Model
+- Confusion Matrix
+- Coorelation matrix of selected features
+- Pair Plot of select features
+
+
+Currently we support 2 Machine learning models Xgboost and Random Forest compatible for offline classification, Python online classification and Deployment in microcontroller.
 
 ### Xgboost Model Traning 
 
@@ -169,5 +178,7 @@ rfml.Random_forest(
 )
 
 ```
+
+
 
 
