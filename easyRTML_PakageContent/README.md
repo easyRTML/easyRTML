@@ -11,7 +11,7 @@ Welcome to the world of Machine Learning! It’s perfectly okay to be a beginner
 
 I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified. Let's get started!
 
--**Developer - Aryan Jadhav**
+**Developer - Aryan Jadhav**
   
 
 ## Getting Started
