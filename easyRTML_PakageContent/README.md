@@ -455,4 +455,5 @@ This is how the Arduino IDE should look like, main.ino code, pipeline.h code and
 <img width="1433" alt="Screenshot 2024-07-08 at 11 24 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/e30c381f-8e17-4d77-8a18-7317d70b2fe2">
 
 
-![My Video 1](https://github.com/easyRTML/easyRTML/assets/174990499/87c0a7e6-ba98-4e4e-b5f3-8aabaaa9da4b)
+![My Video 1 (1)](https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627)
+
