@@ -31,6 +31,7 @@ To record the data from your microcontoller (for Instance Esp8266), recording co
 
 Example Data Recording code of Arduino IDE for MPU6050 and ESP8266:
 ```sh
+
 #include <Adafruit_MPU6050.h>
 #include <Wire.h>
 Adafruit_MPU6050 mpu;
@@ -78,12 +79,11 @@ Tip: If The data is not plotting, check the baudrate match it to code if still p
 Now you have sucessfully uploaded the data aqutition code, your device is ready to Data Recording. Go back to jyputer notebook where the package is installed. Run the below code. 
 
 ```sh
+
 from easyRTML import DataAQ
 
 filename = "fsr" # Enter the name you want for your recorded CSV file Eg. "fsr"
-
 serial_port = '/dev/tty.usbserial-XXXX'  # Enter the serial port name Eg. COMX, /dev/tty.usbserial-XXXX
-
 baud_rate = 115200  # Enter the same BaudRate used in Data Recording code at Arduino IDE.
 
 data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=baud_rate)
@@ -94,5 +94,8 @@ data_acquisition = DataAQ(filename=filename, serial_port=serial_port, baud_rate=
 - You can record the data again for any label if not recorded perfectly.
 - Csv file will be saved in your directory with the mentioned "filename_sampling_freq.csv"
 Tip : If code stops while recording or doesn't, pulg out the serial port and plug in back.
+
 """
+
 ```
+
