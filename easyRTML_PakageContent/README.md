@@ -203,6 +203,8 @@ You can:
 
 To use any of this code, you should get an Authetication Key from https://easyrtml.pythonanywhere.com/
 
+<img width="1440" alt="Screenshot 2024-07-08 at 11 27 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/18616df1-3c39-4738-ac85-439331e1401e">
+
 
 Note: Make sure you enter proper Email and Name, Since you will be reciving Authetication Key on your provided Email.
 
