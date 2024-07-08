@@ -1,8 +1,8 @@
-# Project Title
+# easyRTML
 
 ![Project Logo](images/logo.png)
 
-A brief description of what this project does and who it's for.
+Now train your first Real-Time Machine Learning signal classification model and deploy it in any microcontroller with NO CODING REQUIRED!
 
 ## Table of Contents
 
