@@ -14,7 +14,7 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Table of Contents
 
-- [Installatidddon](#installation)
+- [Installation](#installation)
 
 
 ## Installation
@@ -26,7 +26,7 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Usage
 
-### Step 1: Initialise Data Recording for Microcontroller
+## Step 1: Initialise Data Recording for Microcontroller
 To record the data from your microcontoller (for Instance Esp8266), recording code must be uploaded in it through Arduino IDE, initilizing the required sensor (for Instance MPU6050, IMU Sensor) with comma separted values.
 
 Example Data Recording code of Arduino IDE for MPU6050 and ESP8266:
@@ -247,7 +247,7 @@ To deply the Xgboost or Random Forest trained saved model, we require to generat
 
 - Classifer.h
 - Pipeline.h
-- [Modify the Data Recording code of Arduino IDE](Step 1: Initialise Data Recording for Microcontroller)
+- [Modify the Data Recording code of Arduino IDE](#Step 1: Initialise Data Recording for Microcontroller)
 
 
 
