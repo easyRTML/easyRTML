@@ -1,16 +1,23 @@
-## Hi there 👋
+# easyRTML
 
-<!--
-**easyRTML/easyRTML** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/easyRTML/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-brightgreen.svg)](https://www.python.org/downloads/)
 
-Here are some ideas to get you started:
+## Overview
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**easyRTML** is a Python package designed for signal classification and deployment on any microcontroller board without requiring any expertise. This package facilitates seamless data acquisition, feature extraction, model training, and conversion to deployable code for embedded systems.
+
+## Features
+
+- **Data Acquisition**: Capture data from sensors and save it in CSV format.
+- **Feature Extraction**: Extract relevant features from raw data for machine learning.
+- **Model Training**: Train classification models using state-of-the-art algorithms.
+- **Model Deployment**: Convert trained models to C++ code for deployment on microcontrollers.
+
+## Installation
+
+To install the package, use `pip`:
+
+```sh
+pip install easyRTML
+
