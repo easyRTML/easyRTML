@@ -291,15 +291,15 @@ else:
 
 ### RTML for Microcontroller (ESP32, ESP8266, Arduino 33 BLE, etc)
 
-To deply the Xgboost or Random Forest trained saved model, we require to generate:
+To deploy your trained XGBoost or Random Forest model on a microcontroller, you'll need to generate the following files:
 
-- pipeline.h
-- classifier.h
+- 'pipeline.h'
+- 'classifier.h'
 - Modify the Data Recording code of Arduino IDE 
 
 ### Generate Pipeline.h 
 
-Same for both model, Xgboost and Random Forest both:
+This file is required for both XGBoost and Random Forest models. It includes:
 
 ```sh
 
@@ -401,7 +401,7 @@ else:
 
 ### Modify the Data Recording code of Arduino IDE (main.ino)
 
-Marked with "// Modified code" are the extra lines added in the data recording code which are required to integrate with classifier.h and pipeline.h code. Also Additional conditional code included to perfrom any task based upon prediction results. 
+Lines marked with "// Modified code" indicate the extra lines added to the data recording code to facilitate integration with the classifier.h and pipeline.h files. Additionally, conditional code has been included to perform specific tasks based on the prediction results.
 
 ```sh
 #include <Adafruit_MPU6050.h>
@@ -451,19 +451,14 @@ void loop() {
 }
 ```
 
-This is how the Arduino IDE should look like, main.ino code, pipeline.h code and classifier.h code, all 3 in different tabs in same file.
+This is how your Arduino IDE setup should look, with the main.ino, pipeline.h, and classifier.h codes in separate tabs within the same file:
 
 <img width="1433" alt="Screenshot 2024-07-08 at 11 24 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/e30c381f-8e17-4d77-8a18-7317d70b2fe2">
 
-Awesome! Now complile the code and upload to your microcontoller board. After upload complete sucessfully, open your 'Serial Monitor' in Arduino IDE and Boom! **Your real time prediction resuts will be printed.**
+Fantastic! Now, compile the code and upload it to your microcontroller board. Once the upload is complete, open the 'Serial Monitor' in the Arduino IDE. **Voilà! Your real-time prediction results will be displayed.**
 
-# Congragulations You have Scussfully made your first Real-Time Machine_learning Project.
+**YAAAAAAAAYYYY! You’ve successfully completed your first Real-Time Machine Learning project. 🎉🎉🎉**
 
 
 
-Demo: Prosthetic Hand's 10 gesture recognition using 3 channel EMG sensors and easyRTML Package.
-
-<p align="center">
-  <img src="https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627" alt="My Video 1 (1)">
-</p>
 
