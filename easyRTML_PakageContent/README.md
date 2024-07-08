@@ -7,14 +7,13 @@
 
 **Dear ML Enthusiasts and Aspiring Beginners,**
 
-Welcome to the world of Machine Learning! It’s perfectly okay to be a beginner in ML—I'm still learning myself! Today, you're about to start on a journey to train your first Machine Learning signal classification model. Deploy it on any microcontrollers like ESP32, ESP8266, Arduino 33 BLE, or platforms like Raspberry Pi and Python, you’ll be able to perform Real-Time classification with lightning-fast prediction times ranging from **10 to 100 microseconds.**
+Today, you're about to start on a journey to train your first Machine Learning signal classification model. Deploy it on any microcontrollers like ESP32, ESP8266, Arduino 33 BLE, or platforms like Raspberry Pi and Python, you’ll be able to perform Real-Time classification with lightning-fast prediction times ranging from **10 to 100 microseconds.**
 
-I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified. Let's get started!
+I’m a 4th-year Engineering student at IIT (BHU), and this package has been used for research work. The use case is detailed in my research paper, so you can be confident that this package is genuine and verified. 
 
-**Developer - Aryan Jadhav**
+Let's get started!
 
-Demo: Prosthetic Hand 10 gesture recognition using 3 channel EMG sensors and easyRTML Package.
-![My Video 1 (1)](https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627)
+**- Aryan Jadhav**
 
 ## Getting Started
 
@@ -456,6 +455,15 @@ This is how the Arduino IDE should look like, main.ino code, pipeline.h code and
 
 <img width="1433" alt="Screenshot 2024-07-08 at 11 24 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/e30c381f-8e17-4d77-8a18-7317d70b2fe2">
 
+Awesome! Now complile the code and upload to your microcontoller board. After upload complete sucessfully, open your 'Serial Monitor' in Arduino IDE and Boom! **Your real time prediction resuts will be printed.**
 
-![My Video 1 (1)](https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627)
+# Congragulations You have Scussfully made your first Real-Time Machine_learning Project.
+
+
+
+Demo: Prosthetic Hand's 10 gesture recognition using 3 channel EMG sensors and easyRTML Package.
+
+<p align="center">
+  <img src="https://github.com/easyRTML/easyRTML/assets/174990499/46e8e560-bfcc-43cd-8233-6deefa3ff627" alt="My Video 1 (1)">
+</p>
 
