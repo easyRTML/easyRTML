@@ -303,7 +303,7 @@ if authenticate(email=email):
     print(cpp_code)
 
 else:
-    print("Access denied
+    print("Access denied")
     
     """
     - A promt will apprear, please enter your Authetication code to proceed.
@@ -328,11 +328,11 @@ if authenticate(email=email):
     - Genearted code will be saved in your directory.
     """
 
-     cpp_code = generate_code("rf_model", 'rf_model.pkl', rfml)
-     print(cpp_code)
+    cpp_code = generate_code("easyRTML_RandomForest", 'rf_model.pkl', rfml)
+    print(cpp_code)
 
 else:
-    print("Access denied
+    print("Access denied")
     
     """
     - A promt will apprear, please enter your Authetication code to proceed.
