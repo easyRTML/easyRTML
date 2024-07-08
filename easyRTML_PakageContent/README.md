@@ -136,7 +136,38 @@ features_df.describe()
 
 ## Step 4: Feature Selection + Model Training 
 
+Now we are all set to Train out Machine Learning model. Before that we select the best features among the features_df dataframe which corresponds to highest accursy with limited number of features with coorelation matrix of selected features, Pair Plot of select features and classification report. 
 
+Currently we support 2 Machine learning models Xgboost and RandomForest for offline and online classification.
 
+### Xgboost Model Traning 
+
+```sh
+
+from easyRTML import XGML
+
+xgml = XGML(shuffled_df)
+xgml.Xgboost(
+    xgb_params={'max_depth': 3, 'n_estimators': 10},
+    cv_params={'n_splits': 5},
+    filename='xgboost_model.pkl'
+)
+
+```
+
+### Random Forest Model Traning 
+
+```sh
+
+from easyRTML import RBML
+
+rfml = RBML(shuffled_df)
+rfml.Random_forest(
+    rf_params={'max_depth': 3, 'n_estimators': 10},
+    cv_params={'n_splits': 5},
+    filename='rf_model.pkl'
+)
+
+```
 
 
