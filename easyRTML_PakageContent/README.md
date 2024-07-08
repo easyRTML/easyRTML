@@ -465,8 +465,6 @@ Fantastic! Now, compile the code and upload it to your microcontroller board. On
 
 ---
 
-I understand that this process might seem complicated at first, but believe me, it’s the easiest way to run your trained ML model in real time. With continued experimentation with new data and models, you’ll quickly get the hang of it.
-
 If you encounter any issues or can’t get your model to run in real time, don’t hesitate to reach out to me at easiestrtml@gmail.com. You can schedule an appointment, and I’ll be happy to assist you with your project.
 
 Happy experimenting, and best of luck with your Real-Time Machine Learning journey!
