@@ -204,6 +204,9 @@ For Xgboost and Random Forest both trained classifier models:
 
 ```sh
 
+"""
+Python RTML Code generator
+"""
 from easyRTML import authenticate
 email = "abc@gmail.com" #Enter your email here
 
@@ -213,7 +216,7 @@ if authenticate(email=email):
     
     from easyRTML import pyRTML
 
-    py_RTML = pyRTML(processor, extractor, xgml) #Change rfml/xgml depending upon which model been used
+    py_RTML = pyRTML(processor, extractor, xgml) # Change the below rfml/xgml depending upon which model been used
     
     """
     - Run the below code to access the generted python script to Execute the Real-time classification.
@@ -225,11 +228,12 @@ if authenticate(email=email):
     print(generated_code)
 
     """
-    - Run the below code to Execute the Real-time classification directly without getting generted code.
+    - Run the below code if you wish to Execute the Real-time classification directly without getting generted code.
+    - Make sure you comment out the above code completly.
     - Make sure you define model_file, serial_port, baud_rate correctly.
     - Genearted code will be saved in your directory.
     """
-    # py_RTML.execute_generated_code(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200) 
+#    py_RTML.execute_generated_code(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200) 
     
 else:
     print("Access denied")
@@ -254,6 +258,10 @@ To deply the Xgboost or Random Forest trained saved model, we require to generat
 Same for both model, Xgboost and Random Forest both:
 
 ```sh
+
+"""
+pipeline.h code
+"""
 
 from easyRTML import authenticate
 email = "abc@gmail.com"  #Enter your email here
@@ -286,6 +294,10 @@ For Xgboost porting:
 
 ```sh
 
+"""
+classifier.h code
+"""
+
 from easyRTML import authenticate
 email = "abc@gmail.com"  #Enter your email here
 
@@ -315,6 +327,10 @@ For Random Forest porting:
 
 ```sh
 
+"""
+classifier.h code
+"""
+
 from easyRTML import authenticate
 email = "abc@gmail.com"  #Enter your email here
 
@@ -338,5 +354,58 @@ else:
     - A promt will apprear, please enter your Authetication code to proceed.
     """
 ```
+
+### Modify the Data Recording code of Arduino IDE (main.ino)
+
+Marked with "// Modified code" are the extra lines added in the data recording code which are required to integrate with classifier.h and pipeline.h code. Also Additional conditional code included to perfrom any task based upon prediction results. 
+
+```sh
+#include <Adafruit_MPU6050.h>
+#include <Wire.h>
+#include "pipeline.h" // Modified code
+
+Adafruit_MPU6050 mpu;
+Pipeline pipeline; // Modified code
+
+//const int esp8266LedPin = LED_BUILTIN;
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial) {
+    delay(10); 
+  }
+
+  if (!mpu.begin()) {
+    while (1) {
+      delay(10);
+    }
+  }
+
+  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  
+// Initialize ESP8266 onboard LED pin
+//  pinMode(esp8266LedPin, OUTPUT);
+
+}
+
+void loop() {
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+  float rawData[6] = {a.acceleration.x, a.acceleration.y, a.acceleration.z, g.gyro.x, g.gyro.y, g.gyro.z}; // Modified code
+
+  pipeline.normalizeAndBuffer(rawData); // Modified code
+
+// Check the prediction result from Pipeline
+//  String prediction = pipeline.getPrediction();
+//  if (prediction == "ud") {
+//    digitalWrite(esp8266LedPin, HIGH); // Turn ESP8266 LED on
+//  } else {
+//    digitalWrite(esp8266LedPin, LOW); // Turn ESP8266 LED off
+//  }
+  
+}
+```
+
 
 
