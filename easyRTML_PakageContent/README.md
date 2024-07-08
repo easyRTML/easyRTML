@@ -43,7 +43,6 @@ Let's get started!
       - [Generate Classifier.h](#generate-classifierh)
       - [Modify the Data Recording Code of Arduino IDE (main.ino)](#modify-the-data-recording-code-of-arduino-ide-mainino)
 
-
   
 ## Installation
 
