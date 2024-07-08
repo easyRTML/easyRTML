@@ -35,10 +35,13 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Installation
 
-1. Install easyRTML package in your jupyter notebook environment 
-    ```sh
-    pip install easyRTML
-    ```
+Install latest easyRTML package in your jupyter notebook environment
+
+```sh
+pip install easyRTML
+
+```   
+
 
 ## Usage
 
@@ -165,7 +168,7 @@ features_df.describe()
 
 ## Step 4: Feature Selection + Model Training 
 
-Now we are all set to Train out Machine Learning model. Before that we select the best features among the features_df dataframe which corresponds to highest accursy with limited number of features eventually resulting in prediction time 10-100 macroseconds.
+Now we're ready to train our Machine Learning model! 🎉 Before diving in, we'll identify the best features from the features_df dataframe. This ensures we use the most relevant features for the highest accuracy while keeping the model efficient, with prediction times in the range of 10-100 microseconds.
 
 Outputs and Visual results:
 - List of Selected Features
@@ -176,7 +179,9 @@ Outputs and Visual results:
 - Pair Plot of select features
 
 
-Currently we support 2 Machine learning models Xgboost and Random Forest compatible for offline classification, Python online classification and Deployment in microcontroller.
+At this stage, we support two fantastic Machine Learning models: XGBoost and Random Forest. These models are compatible for offline classification, Python-based online classification, and deployment on microcontrollers.
+
+You’re all set to train and evaluate your model with ease and precision.
 
 ### Xgboost Model Traning 
 
@@ -214,19 +219,19 @@ rfml.Random_forest(
 
 You are all set at this point to deploy your model in various platforms and get live predictions from new data by sensor.
 
-You can:
-- Perfrom RTML in jupyter notebook or VSCode though Python 
-- Perfrom RTML in ESP32, ESP8266, Arduino 33 BLE Microcontroller through Classifier.h and Pipeline.h generted code
-- Perfrom RTML in RaspberryPi through Miropython generted code (....Comming soon)
+Here’s what you can do:
+- Perform RTML in Jupyter Notebook or VSCode using Python
+- Deploy RTML on ESP32, ESP8266, Arduino 33 BLE microcontrollers with the generated Classifier.h and Pipeline.h code
+- Upcoming: Deploy RTML on Raspberry Pi using MicroPython (stay tuned!)
 
-To use any of this code, you should get an Authetication Key from https://easyrtml.pythonanywhere.com/
+To utilize any of these deployment options, you'll need an Authentication Key from [easyRTML.com](https://easyrtml.pythonanywhere.com/)
 
 <img width="1440" alt="Screenshot 2024-07-08 at 11 27 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/18616df1-3c39-4738-ac85-439331e1401e">
 
 
-> <span style="background-color: #FFFF00">**Note:** Make sure you enter proper Email and Name, Since you will be reciving Authetication Key on your provided Email.</span>
+> <span style="background-color: #FFFF00">**Note:** Ensure you provide a valid email address and name, as your Authentication Key will be sent to the email you provide.</span>
 
-Next, save your Authetication Key and Email you recived, it would be required to execute the code. 
+Once you receive your Authentication Key, save it along with your email, as you'll need these details to execute the code.
 
 
 ### RTML code generator for Python (Jupyter Notebook & VSCode)
