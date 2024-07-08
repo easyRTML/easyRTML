@@ -36,7 +36,7 @@ Let's get started!
   - [Step 4: Feature Selection + Model Training](#step-4-feature-selection--model-training)
     - [Xgboost Model Training](#xgboost-model-training)
     - [Random Forest Model Training](#random-forest-model-training)
-  - [Step 5: Model deployment to perfrom Real-Time Machine Learning (RTML)](#step-5-model-deployment-to-perform-real-time-machine-learning-rtml)
+  - [Step 5: Model Deployment to Perform Real-Time Machine Learning (RTML)](#step-5-model-deployment-to-perform-real-time-machine-learning-rtml)
     - [RTML Code Generator for Python (Jupyter Notebook & VSCode)](#rtml-code-generator-for-python-jupyter-notebook--vscode)
     - [RTML for Microcontroller (ESP32, ESP8266, Arduino 33 BLE, etc)](#rtml-for-microcontroller-esp32-esp8266-arduino-33-ble-etc)
       - [Generate Pipeline.h](#generate-pipelineh)
