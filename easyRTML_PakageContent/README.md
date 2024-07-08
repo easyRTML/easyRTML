@@ -211,14 +211,13 @@ if authenticate(email=email):
     
     from easyRTML import pyRTML
 
-    py_RTML = pyRTML(processor, extractor, xgml) #Change rbml/xgml depending upon which model been used
+    py_RTML = pyRTML(processor, extractor, xgml) #Change rfml/xgml depending upon which model been used
     
     """
     - Run the below code to access the generted python script to Execute the Real-time classification.
     - Make sure you define model_file, serial_port, baud_rate correctly.
     - Genearted code will be saved in your directory.
     """
-
     generated_code = py_RTML.easyRTML_python_generate(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200)
     py_RTML.save_code_to_file(generated_code) # Save the generated code to a file
     print(generated_code)
@@ -228,7 +227,6 @@ if authenticate(email=email):
     - Make sure you define model_file, serial_port, baud_rate correctly.
     - Genearted code will be saved in your directory.
     """
-
     # py_RTML.execute_generated_code(model_file="xgboost_model.pkl", serial_port='/dev/cu.usbserial-0001', baud_rate=115200) 
     
 else:
@@ -239,6 +237,8 @@ else:
     """
 
 ```
+
+
 
 
 
