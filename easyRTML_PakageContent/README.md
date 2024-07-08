@@ -14,7 +14,7 @@ Now train your first Machine Learning signal classification model and deploy it 
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Installatidddon](#installation)
 
 
 ## Installation
@@ -198,7 +198,9 @@ Note: Make sure you enter proper Email and Name, Since you will be reciving Auth
 Next, save your Authetication Key and Email you recived, it would be required to execute the code. 
 
 
-### RTML through Python code (for Jupyter Notebook or VSCode)
+### RTML code generator for Python (Jupyter Notebook & VSCode)
+
+For Xgboost and Random Forest both trained classifier models:
 
 ```sh
 
@@ -239,6 +241,13 @@ else:
 ```
 
 
+### RTML for Microcontroller (ESP32, ESP8266, Arduino 33 BLE, etc)
+
+To deply the Xgboost or Random Forest trained saved model, we require to generate:
+
+- Classifer.h
+- Pipeline.h
+- [Modify the Data Recording code of Arduino IDE](Step 1: Initialise Data Recording for Microcontroller)
 
 
 
