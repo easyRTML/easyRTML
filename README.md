@@ -236,7 +236,7 @@ Here’s what you can do:
 - Deploy RTML on ESP32, ESP8266, Arduino 33 BLE microcontrollers with the generated Classifier.h and Pipeline.h code
 - Upcoming: Deploy RTML on Raspberry Pi using MicroPython (stay tuned!)
 
-To utilize any of these deployment options, you'll need an Authentication Key from [easyRTML.com](https://easyrtml.pythonanywhere.com/)
+To utilize any of these deployment options, you'll need an Authentication Key from [easyRTML.com](https://easyrtml.pythonanywhere.com/) {If site doesn't work, reload it}
 
 <img width="1440" alt="Screenshot 2024-07-08 at 11 27 34 PM" src="https://github.com/easyRTML/easyRTML/assets/174990499/18616df1-3c39-4738-ac85-439331e1401e">
 
